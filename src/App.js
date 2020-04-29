@@ -1,12 +1,25 @@
 import React from 'react';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 
-function App() {
-  return (
+const App = () => (
+  <div>
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+    </ul>
+  </div>
+);
+
+
+const AppRouter = () => (
+  <Router>
     <div>
-      hello, world
+      <Route path="/" exact component={App} />
     </div>
-  );
-}
+  </Router>
+);
 
-export default App;
+
+export default AppRouter;

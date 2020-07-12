@@ -19,7 +19,7 @@ export default function ArticleView({ articles, imgHeight = 300 }) {
     <Grid container spacing={3}>
 
       {articles.map((d, i) => (
-        <Grid item sm={6} key={i}>
+        <Grid item sm={6} lg={4} key={i}>
           <Card>
             <CardActionArea>
               <CardMedia

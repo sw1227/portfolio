@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e55366710ff0d22e2742ca2aa0a9cfb",
+    "revision": "1b4fc600debe2e0363fc90aafc79fd8a",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "34ecc5355b1f23523f3c",
+    "revision": "3388337eba555e4aef00",
     "url": "/portfolio/static/css/main.88824ec2.chunk.css"
   },
   {
-    "revision": "cdf8b28fc35c4e6147de",
-    "url": "/portfolio/static/js/2.301a7c56.chunk.js"
+    "revision": "780301e542057f0b3574",
+    "url": "/portfolio/static/js/2.fc47822e.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/portfolio/static/js/2.301a7c56.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.fc47822e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "34ecc5355b1f23523f3c",
-    "url": "/portfolio/static/js/main.e12dead9.chunk.js"
+    "revision": "3388337eba555e4aef00",
+    "url": "/portfolio/static/js/main.8a4cdc9d.chunk.js"
   },
   {
     "revision": "f619aeccc94a0d089131",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0effd92196fd142c342d9fe72a61b261",
     "url": "/portfolio/static/media/calabiyau.0effd921.png"
+  },
+  {
+    "revision": "6421df201a33a7b0d0571ee6894dfa0f",
+    "url": "/portfolio/static/media/calabiyau2.6421df20.jpg"
   },
   {
     "revision": "1d7ab3d70301aae4e49e9d649ea486a2",
@@ -40,16 +44,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/convert.b49a2556.jpeg"
   },
   {
+    "revision": "3d9c418dc6cfef98d8d2cd12b5dc8da9",
+    "url": "/portfolio/static/media/convert2.3d9c418d.jpg"
+  },
+  {
     "revision": "d9da35dc5669f4f635ae46bbeaa3c29f",
     "url": "/portfolio/static/media/fuji_optuna.d9da35dc.png"
+  },
+  {
+    "revision": "456235660b2ec3dff5c8786ce73f371f",
+    "url": "/portfolio/static/media/gopher.45623566.JPG"
   },
   {
     "revision": "3973f2750d758db28f3388a7b6f2e644",
     "url": "/portfolio/static/media/hyogo.3973f275.jpg"
   },
   {
+    "revision": "ac7d1734e9d3c4372d22f27b43494f57",
+    "url": "/portfolio/static/media/kuzushiji.ac7d1734.png"
+  },
+  {
     "revision": "d7900014afa21ca65ee5c6124bc61e3c",
     "url": "/portfolio/static/media/road_direction.d7900014.png"
+  },
+  {
+    "revision": "6ad3ce79e72f919e905b91da503fdecb",
+    "url": "/portfolio/static/media/shuri.6ad3ce79.jpg"
   },
   {
     "revision": "13c64da3903590bc0fb3c5f26920dff7",

@@ -7,6 +7,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Container from '@material-ui/core/Container';
 
+import { categories } from './views/articles';
 import All from './views/All';
 import Geo from './views/Geospatial';
 import Algorithms from './views/Algorithms';
@@ -16,10 +17,10 @@ import Math from './views/Math';
 
 const routes = [
   { path: "/", component: All, label: "All" },
-  { path: "/geospatial", component: Geo, label: "Geospatial" },
-  { path: "/algorithms", component: Algorithms, label: "Algorithms" },
-  { path: "/three", component: Three, label: "3D" },
-  { path: "/math", component: Math, label: "Math" },
+  { path: "/geospatial", component: Geo, label: categories.geospatial.label },
+  { path: "/algorithms", component: Algorithms, label: categories.algorithms.label },
+  { path: "/three", component: Three, label: categories.three.label },
+  { path: "/math", component: Math, label: categories.math.label },
 ];
 
 

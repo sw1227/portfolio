@@ -1,11 +1,16 @@
 import wire_terrain from './img/wire_terrain.jpg';
 import contour_terrain from './img/contour_terrain.jpg';
 import convert from './img/convert.jpeg';
+import convert2 from './img/convert2.jpg';
 import fuji_optuna from './img/fuji_optuna.png';
 import road_direction from './img/road_direction.png';
 import hyogo from './img/hyogo.jpg';
 import calabiyau from './img/calabiyau.png';
+import calabiyau2 from './img/calabiyau2.jpg';
 import complex from './img/complex.png';
+import kuzushiji from './img/kuzushiji.png';
+import shuri from './img/shuri.jpg';
+import gopher from './img/gopher.JPG';
 
 
 export const tags = {
@@ -46,12 +51,23 @@ export const categories = {
     label: "3D"
   },
   math: {
-    label: "Math/Stats"
+    label: "Math / ML / Statistics"
   }
 };
 
 
 export const articles = [
+  {
+    image: shuri,
+    title: "焼失した首里城のデジタル復元を地図上に3Dで可視化する",
+    text: "歴史的建築物は地理的環境と不可分の関係にある。OUR Shurijoプロジェクトで復元された首里城の3DモデルをインタラクティブなWeb地図上に配置して可視化するサイトを作成し、その方法の詳細について解説した。glTFファイルの圧縮やDeck.gl + Mapboxによる可視化が主なテーマ。",
+    link: "https://sw1227.hatenablog.com/entry/2019/11/18/190048",
+    tag: tags.blog,
+    category: [
+      categories.three,
+      categories.geospatial
+    ],
+  },
   {
     image: complex,
     title: "複素関数のカラフルな可視化をPython・JavaScriptで実装する",
@@ -59,6 +75,17 @@ export const articles = [
     link: "https://sw1227.hatenablog.com/entry/2018/12/04/090000",
     tag: tags.blog,
     category: [
+      categories.math
+    ],
+  },
+  {
+    image: calabiyau2,
+    title: "Calabi-Yau多様体をブラウザ上に可視化する",
+    text: "Calabi-Yau多様体を3次元空間に射影し、媒介変数表示に基づいてJavaScript + WebGLで可視化する方法について解説した。",
+    link: "https://sw1227.hatenablog.com/entry/2018/12/03/235105",
+    tag: tags.blog,
+    category: [
+      categories.three,
       categories.math
     ],
   },
@@ -97,7 +124,7 @@ export const articles = [
   {
     image: fuji_optuna,
     title: "PFN製の最適化ツール「Optuna」で富士山を登頂する",
-    text: "富士登山を「富士山付近の標高を収めた二次元配列に関して、標高が最大値をとるようなインデックスを探索する問題」として捉えることにより、Optunaで山頂を探索した。",
+    text: "登頂を「標高の二次元配列に関して、標高が最大値をとるインデックスを探索する問題」として捉え、Optunaによるベイズ最適化で山頂を探索し、その過程を可視化した。大域的な情報を使わずとも比較的短時間で山頂付近に到達できることを確認できた。",
     link: "https://sw1227.hatenablog.com/entry/2018/12/06/071825",
     tag: tags.blog,
     category: [
@@ -118,13 +145,45 @@ export const articles = [
     ],
   },
   {
+    image: gopher,
+    title: "iPhoneのFace IDで3Dスキャンし、データの後処理を行う方法",
+    text: "True Depthカメラで取得（スキャン自体は既存アプリで可能）した点群データをポリゴン状の3Dオブジェクトに変換する。MeshLabで点群の編集・法線ベクトルの計算・メッシュへの変換を行う方法や、usdz形式に変換してARで表示する方法について解説した。",
+    link: "https://sw1227.hatenablog.com/entry/2020/03/26/083027",
+    tag: tags.blog,
+    category: [
+      categories.three
+    ],
+  },
+  {
     image: convert,
     title: "緯度経度と平面直角座標の相互変換をPythonで実装する",
-    text: "国土地理院に記載の変換式には単位の混同があるため、正しい式に基づいた実装を示した。",
+    text: "ブログの方で紹介した修正版の変換式と可視化に基づき、Python (+ NumPy)で変換のための関数を実装した。",
     link: "https://qiita.com/sw1227/items/e7a590994ad7dcd0e8ab",
     tag: tags.qiita,
     category: [
       categories.geospatial,
+      categories.math
+    ],
+  },
+  {
+    image: convert2,
+    title: "緯度経度と平面直角座標の相互変換を実装するための数式",
+    text: "国土地理院が公開する変換式には角度単位の混同（rad/deg）があったため、正確な数式を解説した。その際、変数間の依存関係をグラフで明確に可視化することで実装を容易にした。",
+    link: "https://sw1227.hatenablog.com/entry/2018/11/30/200702",
+    tag: tags.blog,
+    category: [
+      categories.geospatial,
+      categories.math
+    ],
+  },
+  {
+    image: kuzushiji,
+    title: "MNIST互換の日本語くずし字データセットでCNNやt-SNEを試す",
+    text: "当時公開されたばかりだったくずし字データセットについて、クラスごとの画像の可視化・t-SNEによる次元削減・CNN（Keras）による識別といった簡単な実験を行った。",
+    link: "https://sw1227.hatenablog.com/entry/2018/12/10/002329",
+    tag: tags.blog,
+    category: [
+      categories.algorithms,
       categories.math
     ],
   },

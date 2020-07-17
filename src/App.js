@@ -13,6 +13,7 @@ import Geo from './views/Geospatial';
 import Algorithms from './views/Algorithms';
 import Three from './views/Three';
 import Math from './views/Math';
+import Visualization from './views/Visualization';
 
 
 const routes = [
@@ -21,6 +22,7 @@ const routes = [
   { path: "/algorithms", component: Algorithms, label: categories.algorithms.label },
   { path: "/three", component: Three, label: categories.three.label },
   { path: "/math", component: Math, label: categories.math.label },
+  { path: "/vis", component: Visualization, label: categories.vis.label },
 ];
 
 

@@ -42,7 +42,7 @@ export default function AppRouter() {
           indicatorColor="primary"
           textColor="primary"
           variant="scrollable"
-          scrollButtons="auto"
+          scrollButtons="on"
         // aria-label="scrollable auto tabs example"
         >
           {routes.map((r, i) => (

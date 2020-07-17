@@ -23,11 +23,16 @@ export const tags = {
   },
   blog: {
     label: "hatenablog.com",
+    color: "#fff",
+    background: "#008fde",
+    variant: "default",
+  },
+  pages: {
+    label: "github.io",
     color: "#555",
     background: "#fff",
-    variant: "outlined",
-  },
-  // TODO: 埋め込み？　なんていう？
+    variant: "outlined"
+  }
 };
 
 export const categories = {
@@ -47,16 +52,6 @@ export const categories = {
 
 
 export const articles = [
-  // {
-  //   image: ,
-  //   title: "",
-  //   text: "",
-  //   link: "",
-  //   tag: ,
-  //   category: [
-
-  //   ],
-  // },
   {
     image: complex,
     title: "複素関数のカラフルな可視化をPython・JavaScriptで実装する",
@@ -92,7 +87,7 @@ export const articles = [
   {
     image: road_direction,
     title: "道路方向を可視化して地域の地理的・社会的特性を理解する",
-    text: "都市の特徴はいずれも道の方向という形で現れるという点に着目し、道路方向の可視化を実装した。可視化手法は既存のものを参考にしているが、日本のベクトルタイルを利用して独自に実装した。",
+    text: "道路方向には都市の特徴に関する情報が含まれている点に着目し、Web地図上に可視化を実装した。可視化手法は既存のものを参考にしているが、日本のベクトルタイルを利用して独自に実装した。",
     link: "https://sw1227.hatenablog.com/entry/2018/12/27/150150",
     tag: tags.blog,
     category: [

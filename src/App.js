@@ -30,6 +30,7 @@ export default function AppRouter() {
   const [value, setValue] = React.useState(routes.findIndex(d => d.path === currentPath));
 
   const handleChange = (event, newValue) => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
     setValue(newValue);
   };
 

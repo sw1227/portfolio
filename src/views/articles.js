@@ -19,6 +19,9 @@ import boxmuller from './img/boxmuller.jpg';
 import color from './img/color.jpg';
 import colorscale from './img/colorscale.png';
 import regl from './img/regl.jpg';
+import h3hex from './img/h3hex.jpg';
+import inversion from './img/inversion.jpg';
+import h3vis from './img/h3vis.jpg';
 
 
 export const tags = {
@@ -140,7 +143,8 @@ export const articles = [
       },
     ],
     category: [
-      categories.geospatial
+      categories.geospatial,
+      categories.vis
     ],
   },
   {
@@ -173,7 +177,7 @@ export const articles = [
     category: [
       categories.geospatial,
       categories.three,
-      categories.algorithms
+      categories.algorithms,
     ],
   },
   {
@@ -209,7 +213,7 @@ export const articles = [
     ],
     category: [
       categories.geospatial,
-      categories.math
+      categories.math,
     ],
   },
   {
@@ -229,6 +233,22 @@ export const articles = [
     ],
   },
   {
+    image: inversion,
+    title: "Circle Inversion: 円による反転の可視化",
+    text: "平面幾何学において反転と呼ばれる変換の性質を直感的に理解するため、格子模様や市松模様を反転した図を描画した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/circle-inversion",
+        text: "",
+      },
+    ],
+    category: [
+      categories.vis,
+      categories.math
+    ],
+  },
+  {
     image: wire_terrain,
     title: "Terrain Wireframe",
     text: "鍋割山付近の標高タイルをWireframeで表示するだけの簡単な例。光っている感じを出すためにAdditive Blendingを適用した。",
@@ -242,6 +262,38 @@ export const articles = [
     category: [
       categories.geospatial,
       categories.three
+    ],
+  },
+  {
+    image: h3vis,
+    title: "H3 index visualizer",
+    text: "地理空間インデックス手法H3におけるインデックスを地図上で確認する方法が無かったので、領域ごとのH3 indexを動的に重ねたWeb地図を作成した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/h3-index-visualizer",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.vis
+    ],
+  },
+  {
+    image: h3hex,
+    title: "H3 GeoJson",
+    text: "階層的な六角形構造によって構成される地理空間インデックス手法H3に基づいて、GeoJSONからH3への変換・地図上の可視化を実行した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/h3-geojson",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.algorithms
     ],
   },
   {
@@ -299,8 +351,13 @@ export const articles = [
       {
         tag: tags.qiita,
         url: "https://qiita.com/sw1227/items/8f5da8c22d907352e4c9",
-        text: "",
+        text: "説明",
       },
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/box-muller-transform",
+        text: "インタラクティブ版"
+      }
     ],
     category: [
       categories.math,
@@ -315,8 +372,13 @@ export const articles = [
       {
         tag: tags.qiita,
         url: "https://qiita.com/sw1227/items/0403d8d07e90c62f596b",
-        text: "",
+        text: "説明",
       },
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/cholesky-decomposition",
+        text: "実装: インタラクティブ版"
+      }
     ],
     category: [
       categories.algorithms,
@@ -331,8 +393,13 @@ export const articles = [
       {
         tag: tags.qiita,
         url: "https://qiita.com/sw1227/items/998f8387c4f4c84e707b",
-        text: "",
+        text: "説明",
       },
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/simple-piano-keyboard",
+        text: "実装: インタラクティブ版"
+      }
     ],
     category: [
       categories.vis
@@ -383,6 +450,11 @@ export const articles = [
         tag: tags.qiita,
         url: "https://qiita.com/sw1227/items/a17d424ce8d0cd2302e6",
         text: "JavaScript + タイル座標確認方法の解説"
+      },
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/fetch-elevation-tile",
+        text: "JavaScript: インタラクティブ版"
       }
     ],
     category: [
@@ -397,8 +469,13 @@ export const articles = [
       {
         tag: tags.qiita,
         url: "https://qiita.com/sw1227/items/f08cd25364fbaea07792",
-        text: "",
+        text: "説明・React版",
       },
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/reusable-2d-array-image-function",
+        text: "インタラクティブ版"
+      }
     ],
     category: [
       categories.vis

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a87e0bfec5933cb7ed7a37073368e51",
+    "revision": "de0eae76ade4d0133139586b661c305b",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "cee430ea3051657ce453",
+    "revision": "2ba70df153c31469fc64",
     "url": "/portfolio/static/css/main.88824ec2.chunk.css"
   },
   {
-    "revision": "678461ea069733a1da5d",
-    "url": "/portfolio/static/js/2.9a1ceb38.chunk.js"
+    "revision": "2088810c3b9ff59d9099",
+    "url": "/portfolio/static/js/2.195648dc.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/portfolio/static/js/2.9a1ceb38.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.195648dc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cee430ea3051657ce453",
-    "url": "/portfolio/static/js/main.9e5521f4.chunk.js"
+    "revision": "2ba70df153c31469fc64",
+    "url": "/portfolio/static/js/main.157d7539.chunk.js"
   },
   {
     "revision": "f619aeccc94a0d089131",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "adf7fd05a7b274371acfba1799ed35c4",
     "url": "/portfolio/static/media/boxmuller.adf7fd05.jpg"
-  },
-  {
-    "revision": "0effd92196fd142c342d9fe72a61b261",
-    "url": "/portfolio/static/media/calabiyau.0effd921.png"
   },
   {
     "revision": "6421df201a33a7b0d0571ee6894dfa0f",
@@ -56,20 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/contour_terrain.520468bf.jpg"
   },
   {
-    "revision": "b49a25564e30a11c2528c7f90aed0ae0",
-    "url": "/portfolio/static/media/convert.b49a2556.jpeg"
-  },
-  {
     "revision": "3d9c418dc6cfef98d8d2cd12b5dc8da9",
     "url": "/portfolio/static/media/convert2.3d9c418d.jpg"
   },
   {
     "revision": "0c5414742bff66f8af9e88b50eca08b5",
     "url": "/portfolio/static/media/dempython.0c541474.jpg"
-  },
-  {
-    "revision": "89f5e99e5abb5a1bfd78453d914fc802",
-    "url": "/portfolio/static/media/demtile.89f5e99e.jpeg"
   },
   {
     "revision": "d9da35dc5669f4f635ae46bbeaa3c29f",
@@ -104,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/regl.f57419f5.jpg"
   },
   {
-    "revision": "d7900014afa21ca65ee5c6124bc61e3c",
-    "url": "/portfolio/static/media/road_direction.d7900014.png"
+    "revision": "ac3736337695c54d72952ac8b10b683a",
+    "url": "/portfolio/static/media/road_direction.ac373633.jpg"
   },
   {
     "revision": "6ad3ce79e72f919e905b91da503fdecb",

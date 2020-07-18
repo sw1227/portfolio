@@ -1,29 +1,26 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.88824ec2.chunk.css",
-    "main.js": "/portfolio/static/js/main.9e5521f4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9e5521f4.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.157d7539.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.157d7539.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.075c0788.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.075c0788.js.map",
-    "static/js/2.9a1ceb38.chunk.js": "/portfolio/static/js/2.9a1ceb38.chunk.js",
-    "static/js/2.9a1ceb38.chunk.js.map": "/portfolio/static/js/2.9a1ceb38.chunk.js.map",
+    "static/js/2.195648dc.chunk.js": "/portfolio/static/js/2.195648dc.chunk.js",
+    "static/js/2.195648dc.chunk.js.map": "/portfolio/static/js/2.195648dc.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.07a4850cc65380f7c447cab01ddaccae.js": "/portfolio/precache-manifest.07a4850cc65380f7c447cab01ddaccae.js",
+    "precache-manifest.37cc8fca9bc6b336dd66aaaedbac6318.js": "/portfolio/precache-manifest.37cc8fca9bc6b336dd66aaaedbac6318.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.88824ec2.chunk.css.map": "/portfolio/static/css/main.88824ec2.chunk.css.map",
-    "static/js/2.9a1ceb38.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9a1ceb38.chunk.js.LICENSE.txt",
+    "static/js/2.195648dc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.195648dc.chunk.js.LICENSE.txt",
     "static/media/boxmuller.jpg": "/portfolio/static/media/boxmuller.adf7fd05.jpg",
-    "static/media/calabiyau.png": "/portfolio/static/media/calabiyau.0effd921.png",
     "static/media/calabiyau2.jpg": "/portfolio/static/media/calabiyau2.6421df20.jpg",
     "static/media/cholesky.jpg": "/portfolio/static/media/cholesky.0f626e97.jpg",
     "static/media/color.jpg": "/portfolio/static/media/color.ec46b7f5.jpg",
     "static/media/colorscale.png": "/portfolio/static/media/colorscale.3f2bc3ab.png",
     "static/media/complex.png": "/portfolio/static/media/complex.1d7ab3d7.png",
     "static/media/contour_terrain.jpg": "/portfolio/static/media/contour_terrain.520468bf.jpg",
-    "static/media/convert.jpeg": "/portfolio/static/media/convert.b49a2556.jpeg",
     "static/media/convert2.jpg": "/portfolio/static/media/convert2.3d9c418d.jpg",
     "static/media/dempython.jpg": "/portfolio/static/media/dempython.0c541474.jpg",
-    "static/media/demtile.jpeg": "/portfolio/static/media/demtile.89f5e99e.jpeg",
     "static/media/fuji_optuna.png": "/portfolio/static/media/fuji_optuna.d9da35dc.png",
     "static/media/gopher.JPG": "/portfolio/static/media/gopher.45623566.JPG",
     "static/media/hyogo.jpg": "/portfolio/static/media/hyogo.3973f275.jpg",
@@ -32,14 +29,14 @@
     "static/media/ode.jpeg": "/portfolio/static/media/ode.c3e4e14e.jpeg",
     "static/media/piano.png": "/portfolio/static/media/piano.6cd2c288.png",
     "static/media/regl.jpg": "/portfolio/static/media/regl.f57419f5.jpg",
-    "static/media/road_direction.png": "/portfolio/static/media/road_direction.d7900014.png",
+    "static/media/road_direction.jpg": "/portfolio/static/media/road_direction.ac373633.jpg",
     "static/media/shuri.jpg": "/portfolio/static/media/shuri.6ad3ce79.jpg",
     "static/media/wire_terrain.jpg": "/portfolio/static/media/wire_terrain.13c64da3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.075c0788.js",
-    "static/js/2.9a1ceb38.chunk.js",
+    "static/js/2.195648dc.chunk.js",
     "static/css/main.88824ec2.chunk.css",
-    "static/js/main.9e5521f4.chunk.js"
+    "static/js/main.157d7539.chunk.js"
   ]
 }

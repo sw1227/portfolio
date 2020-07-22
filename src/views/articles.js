@@ -22,6 +22,16 @@ import regl from './img/regl.jpg';
 import h3hex from './img/h3hex.jpg';
 import inversion from './img/inversion.jpg';
 import h3vis from './img/h3vis.jpg';
+import d3contour from './img/d3contour.jpg';
+import broken from './img/broken.jpg';
+import overlay from './img/overlay.jpg';
+import linkage from './img/linkage.jpg';
+import multivariate from './img/multivariate.jpg';
+import conformal from './img/conformal.jpg';
+import normal3 from './img/normal3.jpg';
+import bilinear from './img/bilinear.jpg';
+import umbilic from './img/umbilic.jpg';
+import supertoroid from './img/supertoroid.jpg';
 
 
 export const tags = {
@@ -91,7 +101,24 @@ export const articles = [
       },
     ],
     category: [
-      categories.math
+      categories.math,
+      categories.vis
+    ],
+  },
+  {
+    image: conformal,
+    title: "Conformal transformation",
+    text: "複素関数の等角写像に関する性質を確認するため、複素平面上の格子模様を変換したときの模様を可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/conformal-transformation",
+        text: "",
+      },
+    ],
+    category: [
+      categories.math,
+      categories.vis
     ],
   },
   {
@@ -230,6 +257,136 @@ export const articles = [
     category: [
       categories.algorithms,
       categories.math
+    ],
+  },
+  {
+    image: supertoroid,
+    title: "Supertoroid",
+    text: "Supertoroidと呼ばれる3次元形状の数式を実装し、WebGLで可視化した。形状は2つの定数に依存するため、スライドバーでインタラクティブに形状を制御できるようにした。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/supertoroid",
+        text: "",
+      },
+    ],
+    category: [
+      categories.three,
+      categories.math
+    ],
+  },
+  {
+    image: umbilic,
+    title: "Umbilic Torus",
+    text: "辺と面を1つずつしか持たない3次元形状であるアンビリック・トーラスのパラメトリックな数式を実装し、WebGLで可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/umbilic-torus",
+        text: "",
+      },
+    ],
+    category: [
+      categories.three,
+      categories.math
+    ],
+  },
+  {
+    image: bilinear,
+    title: "Bilinear interpolation of tile",
+    text: "2Dグリッド上の値を滑らかに補間するBilinear interpolationをJavaScriptで実装した。標高タイルに適用することで、サブピクセル補間が行える様子を可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/bilinear-interpolation-of-tile",
+        text: "",
+      },
+    ],
+    category: [
+      categories.algorithms,
+      categories.geospatial
+    ],
+  },
+  {
+    image: multivariate,
+    title: "Multivariate Normal Distribution",
+    text: "多次元正規分布の分布関数・Samplerをスクラッチから実装し、共分散行列をインタラクティブに操作した際の分布形状を2・3次元で可視化した。その際、過去に実装した一次元正規分布からのSampler（Box-Muller法）とCholesky分解を利用した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/multivariate-normal-distribution",
+        text: "",
+      },
+    ],
+    category: [
+      categories.math,
+      categories.three,
+      categories.vis
+    ],
+  },
+  {
+    image: normal3,
+    title: "3D Normal Distribution",
+    text: "3変数の正規分布の確率密度関数を、3次元空間上における点群の色としてWebGLで可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/3d-normal-distribution",
+        text: "",
+      },
+    ],
+    category: [
+      categories.three,
+      categories.math,
+      categories.vis
+    ],
+  },
+  {
+    image: linkage,
+    title: "Animating 4-Bar Linkage",
+    text: "4節リンク機構のアニメーションをJavaScriptで実装した。リアクティブプログラミング的な考え方を利用することで、座標間の依存関係をそのまま実装するだけで動作をシミュレートすることが可能になった。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/animating-4-bar-linkage",
+        text: "",
+      },
+    ],
+    category: [
+      categories.math,
+      categories.vis
+    ],
+  },
+  {
+    image: broken,
+    title: "Broken Calabi-Yau Manifold",
+    text: "Calabi-Yau多様体の3次元空間への射影を可視化する際、微小な面をランダムに回転させることでGenerative Art風にした。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/broken-calabi-yau-manifold-3d",
+        text: "",
+      },
+    ],
+    category: [
+      categories.three,
+      categories.math
+    ],
+  },
+  {
+    image: d3contour,
+    title: "Dem to contour by d3",
+    text: "d3.jsを使って標高タイルから等高線を生成した。等高線はリアルタイムで動的に生成されているため、スライドバーで間隔を操作することが可能。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/dem-to-contour-by-d3",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.algorithms
     ],
   },
   {
@@ -383,6 +540,22 @@ export const articles = [
     category: [
       categories.algorithms,
       categories.math
+    ],
+  },
+  {
+    image: overlay,
+    title: "Overlay DIY contour on map",
+    text: "ピクセル座標と緯度経度の変換式を実装することで、標高タイルから動的に生成した等高線をWeb地図に重ねられるようにした。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/overlay-diy-contour-on-map",
+        text: "",
+      },
+    ],
+    category: [
+       categories.geospatial,
+       categories.math
     ],
   },
   {

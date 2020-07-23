@@ -32,6 +32,18 @@ import normal3 from './img/normal3.jpg';
 import bilinear from './img/bilinear.jpg';
 import umbilic from './img/umbilic.jpg';
 import supertoroid from './img/supertoroid.jpg';
+import flood from './img/flood.jpg';
+import pngtile from './img/pngtile.jpg';
+import mtgrad from './img/mtgrad.jpg';
+import pseudo from './img/pseudo.jpg';
+import itokawa from './img/itokawa.jpg';
+import warping from './img/warping.jpg';
+import distorted from './img/distorted.jpg';
+import distortedlayer from './img/distortedlayer.jpg';
+import sqrt from './img/sqrt.jpg';
+import tree from './img/tree.jpg';
+import sir from './img/sir.jpg';
+import cyclic from './img/cyclic.jpg';
 
 
 export const tags = {
@@ -73,6 +85,22 @@ export const categories = {
 
 
 export const articles = [
+  {
+    image: sir,
+    title: "SIR simulation of infection (WebGL)",
+    text: "SIRモデルという感染症流行過程の古典的な数理モデルを、マルチエージェントシミュレーションとして実装した。WebGLのシェーダ(GLSL)を用いた並列計算により、エージェント数が100万以上でもブラウザでリアルタイムに計算・可視化が実行できる。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/sir-simulation-with-webgl",
+        text: "",
+      },
+    ],
+    category: [
+      categories.math,
+      categories.vis
+    ],
+  },
   {
     image: shuri,
     title: "焼失した首里城のデジタル復元を地図上に3Dで可視化する",
@@ -257,6 +285,187 @@ export const articles = [
     category: [
       categories.algorithms,
       categories.math
+    ],
+  },
+  {
+    image: cyclic,
+    title: "Cyclic color scale",
+    text: "位相などの周期的な量に対してカラースケールを適用する方法を複数示し、JavaScriptで実装した。色相のように周期的な色を対応づける方法以外にも、三角関数を適用してから通常のカラースケールを適用する方法などが考えられる。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/cyclic-color-scale",
+        text: "",
+      },
+    ],
+    category: [
+      categories.vis,
+      categories.math
+    ],
+  },
+  {
+    image: tree,
+    title: "Collapsible directory tree: from tree command",
+    text: "ディレクトリの階層構造を表示するtreeコマンドは、-JオプションによりJSON形式で出力することができる。そのJSONを記入することで伸縮可能なツリーが表示されるページをJavaScriptで実装した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/collapsible-directory-tree-from-tree-command",
+        text: "",
+      },
+    ],
+    category: [
+      categories.vis
+    ],
+  },
+  {
+    image: sqrt,
+    title: "Babylonian method visualized - computing sqrt",
+    text: "平方根を計算する「バビロニア人の方法」というアルゴリズムがCobweb plot（クモの巣図法）によって説明できることに気がついたので、初期値から平方根へ収束する様子をJavaScriptでインタラクティブに可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/babylonian-method-visualized-sqrt",
+        text: "",
+      },
+    ],
+    category: [
+      categories.math,
+      categories.algorithms,
+      categories.vis
+    ],
+  },
+  {
+    image: distortedlayer,
+    title: "Distorted sphere layers",
+    text: "パーリンノイズで歪めた球を玉ねぎ状に重ね、WebGLで可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/distorted-sphere-layers",
+        text: "",
+      },
+    ],
+    category: [
+      categories.three,
+    ],
+  },
+  {
+    image: distorted,
+    title: "Distorting sphere with cyclic perlin noise",
+    text: "パーリンノイズで円を（一周したらつながるように）歪める手法を知ったので、同様の発想に基づき、+1次元した球を変形させる処理を実装した。3次元連続ノイズの値を球面に沿って拾い、半径方向のオフセットに利用する。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/distorting-sphere-with-cyclic-perlin-noise",
+        text: "",
+      },
+    ],
+    category: [
+      categories.three,
+      categories.algorithms,
+      categories.math
+    ],
+  },
+  {
+    image: warping,
+    title: "Lattice Warping",
+    text: "フラクタルブラウン運動を応用して画像を歪めるDomain Warpingによって2次元空間がどう歪められるかを確認するため、格子模様を変形させた様子を可視化した。WebGLのシェーダを書いているためリアルタイムに動作する。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/lattice-warping",
+        text: "実装: WebGLをそのまま利用",
+      },
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/lattice-warping-with-regl",
+        text: "実装: regl(WebGLのwrapper)を利用"
+      }
+    ],
+    category: [
+      categories.algorithms,
+      categories.math
+    ],
+  },
+  {
+    image: itokawa,
+    title: "Asteroid Itokawa 3D [9MB]",
+    text: "小惑星探査機「はやぶさ」のターゲットとなったイトカワの3次元形状をWebGLで可視化した。法線マテリアルとWireframeを重ねている。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/asteroid-itokawa-3d-9mb",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.three
+    ],
+  },
+  {
+    image: pseudo,
+    title: "Pseudo-contouring",
+    text: "標高タイルを手早く可視化する際に、実際には未計算の等高線をあるかのように見せるテクニックを提案した。標高値と標高のmodをうまく利用することで、地形の把握がしやすくなる。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/pseudo-contouring",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.algorithms
+    ],
+  },
+  {
+    image: mtgrad,
+    title: "Gradient of Mountain",
+    text: "標高タイルの勾配ベクトルを計算する処理を実装し、各地点におけるx, y方向の勾配や勾配ベクトルの絶対値・勾配ベクトルの方向を画像として可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/gradient-of-monutain",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.math
+    ],
+  },
+  {
+    image: pngtile,
+    title: "Decoding PNG elevation tile",
+    text: "PNG形式の標高タイルをWebGLのシェーダ(GLSL)でデコードする処理を実装し、標高にカラースケールを適用した画像として可視化するサンプルを作成した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/decoding-png-elevation-tile",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.math
+    ],
+  },
+  {
+    image: flood,
+    title: "Typhoon Hagibis",
+    text: "2019/10/12の台風第19号による浸水状況を国土地理院がタイルとして公開していたため、各種地図に重ねて可視化した。通常のWeb地図ライブラリでは難しかったタイルのblendは、地図表示にd3-tileとd3-zoomを使うことで実現した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/japan-flood",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial,
+      categories.vis
     ],
   },
   {
@@ -476,8 +685,13 @@ export const articles = [
       {
         tag: tags.qiita,
         url: "https://qiita.com/sw1227/items/84e1410bd4fdf049857c",
-        text: "",
+        text: "説明",
       },
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/d3-scale-chromatic-in-webgl",
+        text: "実装: インタラクティブ版"
+      }
     ],
     category: [
       categories.algorithms,

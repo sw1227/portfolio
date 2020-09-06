@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.88824ec2.chunk.css",
-    "main.js": "/portfolio/static/js/main.67060ef8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.67060ef8.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.72252fcf.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.72252fcf.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.075c0788.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.075c0788.js.map",
-    "static/js/2.e74232dc.chunk.js": "/portfolio/static/js/2.e74232dc.chunk.js",
-    "static/js/2.e74232dc.chunk.js.map": "/portfolio/static/js/2.e74232dc.chunk.js.map",
+    "static/js/2.da036b5b.chunk.js": "/portfolio/static/js/2.da036b5b.chunk.js",
+    "static/js/2.da036b5b.chunk.js.map": "/portfolio/static/js/2.da036b5b.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.dedef23436dfba3a47542e8c4aa49b53.js": "/portfolio/precache-manifest.dedef23436dfba3a47542e8c4aa49b53.js",
+    "precache-manifest.388c5731decff2ca2bf20b77b929548c.js": "/portfolio/precache-manifest.388c5731decff2ca2bf20b77b929548c.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.88824ec2.chunk.css.map": "/portfolio/static/css/main.88824ec2.chunk.css.map",
-    "static/js/2.e74232dc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e74232dc.chunk.js.LICENSE.txt",
+    "static/js/2.da036b5b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.da036b5b.chunk.js.LICENSE.txt",
     "static/media/boxmuller.jpg": "/portfolio/static/media/boxmuller.6978b63b.jpg",
     "static/media/broken.jpg": "/portfolio/static/media/broken.b522b674.jpg",
     "static/media/calabiyau2.jpg": "/portfolio/static/media/calabiyau2.6421df20.jpg",
@@ -34,6 +34,7 @@
     "static/media/h3vis.jpg": "/portfolio/static/media/h3vis.e44e50ec.jpg",
     "static/media/hyogo.jpg": "/portfolio/static/media/hyogo.3973f275.jpg",
     "static/media/inversion.jpg": "/portfolio/static/media/inversion.f5904ca7.jpg",
+    "static/media/isobar.jpg": "/portfolio/static/media/isobar.5e6bf0b0.jpg",
     "static/media/itokawa.jpg": "/portfolio/static/media/itokawa.223d6f82.jpg",
     "static/media/kuzushiji.png": "/portfolio/static/media/kuzushiji.ac7d1734.png",
     "static/media/lattice.jpeg": "/portfolio/static/media/lattice.01a8acea.jpeg",
@@ -59,8 +60,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.075c0788.js",
-    "static/js/2.e74232dc.chunk.js",
+    "static/js/2.da036b5b.chunk.js",
     "static/css/main.88824ec2.chunk.css",
-    "static/js/main.67060ef8.chunk.js"
+    "static/js/main.72252fcf.chunk.js"
   ]
 }

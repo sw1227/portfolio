@@ -44,6 +44,7 @@ import sqrt from './img/sqrt.jpg';
 import tree from './img/tree.jpg';
 import sir from './img/sir.jpg';
 import cyclic from './img/cyclic.jpg';
+import isobar from './img/isobar.jpg';
 
 
 export const tags = {
@@ -233,6 +234,21 @@ export const articles = [
       categories.geospatial,
       categories.three,
       categories.algorithms,
+    ],
+  },
+  {
+    image: isobar,
+    title: "Drawing isobar on map",
+    text: "天気図情報は「気象庁防災情報XMLフォーマット形式電文」から取得できる。これをJavaScriptでデコードし、気圧に応じて色分けされた等圧線をWeb地図上に重ねて描画した。使用したデータは2020年9月の台風10号。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/drawing-isobar-on-map",
+        text: "",
+      },
+    ],
+    category: [
+      categories.geospatial
     ],
   },
   {

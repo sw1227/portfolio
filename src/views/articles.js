@@ -45,6 +45,7 @@ import tree from './img/tree.jpg';
 import sir from './img/sir.jpg';
 import cyclic from './img/cyclic.jpg';
 import isobar from './img/isobar.jpg';
+import genetic from './img/genetic.jpg';
 
 
 export const tags = {
@@ -249,6 +250,21 @@ export const articles = [
     ],
     category: [
       categories.geospatial
+    ],
+  },
+  {
+    image: genetic,
+    title: "Simple Genetic Algorithm",
+    text: "分かりやすさを重視したシンプルな遺伝的アルゴリズムの実装を、JavaScriptでスクラッチから行った。One max problemでの最適化過程を可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/simple-genetic-algorithm",
+        text: "",
+      },
+    ],
+    category: [
+      categories.algorithms
     ],
   },
   {

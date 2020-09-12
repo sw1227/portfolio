@@ -46,6 +46,7 @@ import sir from './img/sir.jpg';
 import cyclic from './img/cyclic.jpg';
 import isobar from './img/isobar.jpg';
 import genetic from './img/genetic.jpg';
+import rgb from './img/rgb.jpg';
 
 
 export const tags = {
@@ -317,6 +318,22 @@ export const articles = [
     category: [
       categories.algorithms,
       categories.math
+    ],
+  },
+  {
+    image: rgb,
+    title: "HSV values in RGB space",
+    text: "色はRGB空間上の点として表現でき、HSVとRGBの変換は3次元空間上における一種の座標変換と捉えることができる。RGB空間上の点をHSVそれぞれの値によって色分けし、関係性を可視化した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/hsv-values-in-rgb-space",
+        text: "",
+      },
+    ],
+    category: [
+      categories.three,
+      categories.vis
     ],
   },
   {

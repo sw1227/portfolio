@@ -47,6 +47,7 @@ import cyclic from './img/cyclic.jpg';
 import isobar from './img/isobar.jpg';
 import genetic from './img/genetic.jpg';
 import rgb from './img/rgb.jpg';
+import seat from './img/seat.jpg';
 
 
 export const tags = {
@@ -118,6 +119,22 @@ export const articles = [
     category: [
       categories.three,
       categories.geospatial
+    ],
+  },
+  {
+    image: seat,
+    title: "Seat optimization by simulated annealing algorithm",
+    text: "適切な席替え方法を求めることによって、パーティー参加者全員が前半と後半でなるべく多くの人と知り合えるようにしたい。ヒューリスティックにコスト関数を定義し、焼なまし法をJavaScriptで実装した。",
+    links: [
+      {
+        tag: tags.observable,
+        url: "https://observablehq.com/@sw1227/seat-optimization-by-simulated-annealing-algorithm",
+        text: "",
+      },
+    ],
+    category: [
+      categories.algorithms,
+      categories.math
     ],
   },
   {

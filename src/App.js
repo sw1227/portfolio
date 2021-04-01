@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HashRouter as Router, Route, Link as RouterLink } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -38,29 +39,36 @@ export default function AppRouter() {
 
 
   return (
-    <Router>
-      <AppBar position="fixed" color="default">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="scrollable"
-          scrollButtons="on"
-        // aria-label="scrollable auto tabs example"
-        >
-          {routes.map((r, i) => (
-            <Tab label={r.label} component={RouterLink} to={r.path} key={i} />
-          ))}
-        </Tabs>
-      </AppBar>
+    <>
+      <Helmet>
+        <meta property="og:title" content="sw1227's portfolio" />
+        <meta property="og:image" content="%PUBLIC_URL%/ogp.jpg" />
+        <meta property="og:description" content="Portfolio of sw1227" />
+      </Helmet>
+      <Router>
+        <AppBar position="fixed" color="default">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+            variant="scrollable"
+            scrollButtons="on"
+          // aria-label="scrollable auto tabs example"
+          >
+            {routes.map((r, i) => (
+              <Tab label={r.label} component={RouterLink} to={r.path} key={i} />
+            ))}
+          </Tabs>
+        </AppBar>
 
-      <MainContainer>
-        {routes.map((r, i) => (
-          <Route path={r.path} exact component={r.component} key={i} />
-        ))}
-      </MainContainer>
-    </Router>
+        <MainContainer>
+          {routes.map((r, i) => (
+            <Route path={r.path} exact component={r.component} key={i} />
+          ))}
+        </MainContainer>
+      </Router>
+    </>
   );
 };
 
